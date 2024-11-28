@@ -15,42 +15,44 @@ import UpdateProfile from "../Components/UpdateProfile/UpdateProfile";
 
 const router = createBrowserRouter([
     {
-        path : "/",
-        element:<MainLayout></MainLayout>,
-        
-        children:[
+        path: "/",
+        element: <MainLayout></MainLayout>,
+
+        children: [
             {
-                path:"/",
-                element:<Home/>
+                path: "/",
+                element: <Home />
             },
             {
-                path:"/DonationCamp",
-                element:<DonationCampaigns/>,
-               loader: () => fetch('/donationData.JSON'),
+                path: "/DonationCamp",
+                element: <DonationCampaigns />,
+                loader: () => fetch('/donationData.JSON'),
             },
             {
-                path:"/login",
-                element:<Login/>
+                path: "/login",
+                element: <Login />
             },
             {
-                path:"/register",
-                element:<Register/>
+                path: "/register",
+                element: <Register />
             },
             {
-                path:"/dashboard",
-                element:<PrivateRoute><Dashboard/></PrivateRoute>
+                path: "/dashboard",
+                element: <PrivateRoute><Dashboard /></PrivateRoute>
             },
             {
-                path:"/details",
-                element:<PrivateRoute><DetailsPage/></PrivateRoute>
+                path: "/campaign/:id",
+                element: <PrivateRoute><DetailsPage /></PrivateRoute>,
+                loader: () => fetch('/donationData.JSON'),
             },
             {
-                path:"*",
-                element:<ErrorPage/>
+                path: "*",
+                element: <ErrorPage />
             },
             {
-                path:"updateProfile",
-                element:<UpdateProfile/>
+                path: "updateProfile",
+                element: <UpdateProfile />
+
             }
 
 
@@ -58,6 +60,6 @@ const router = createBrowserRouter([
 
     }
 ])
-   
+
 
 export default router;

@@ -18,7 +18,7 @@ const Dashboard = () => {
             <h1>Welcome, {user?.name || 'Guest'}!</h1>
             <div>
                 <img
-                    src={user?.image || 'https://via.placeholder.com/150'}
+                    src={user?.image || ''}
                     alt="Profile"
                 />
                 <p><strong>Name:</strong> {user?.name || 'N/A'}</p>

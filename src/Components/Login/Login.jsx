@@ -49,7 +49,7 @@ const Login = () => {
         setErrorMessage(error.message);
         setSuccess(false);
       });
-}
+  }
   const handleGoogleSignIn = () => {
     signInWithGoogle()
       .then(result => {
@@ -66,17 +66,17 @@ const Login = () => {
       })
   }
 
-  const handleForgetPassword = ()=> {
-      const email = emailRef.current.value;
-      if(!email){
-        console.log('Please provide a valid email address')
-      }
-      else{
-        sendPasswordResetEmail(auth, email)
-        .then(()=>{
+  const handleForgetPassword = () => {
+    const email = emailRef.current.value;
+    if (!email) {
+      console.log('Please provide a valid email address')
+    }
+    else {
+      sendPasswordResetEmail(auth, email)
+        .then(() => {
           PiAlarmThin('Password Reset email sent ,Please check your email')
         })
-      }
+    }
   }
   return (
     <div className="hero bg-base-200 min-h-screen">
@@ -88,19 +88,19 @@ const Login = () => {
               <label className="label">
                 <span className="label-text">Email</span>
               </label>
-              <input name="email" type="email" ref= {emailRef}placeholder="email" className="input input-bordered" required />
+              <input name="email" type="email" ref={emailRef} placeholder="email" className="input input-bordered" required />
             </div>
             <div className="form-control relative">
               <label className="label">
                 <span className="label-text">Password</span>
               </label>
               <input name="password" type={showPassword ? 'text' : 'password'} placeholder="password" className="input input-bordered" required />
-              <button 
-              onClick={()=> setShowPassword(!showPassword)}
-              className="btn absolute right-2 top-12 btn-xs">{
-                showPassword ? <FaEyeSlash/> : <FaEye />
-              }</button>
-              <label onClick={handleForgetPassword}  className="label">
+              <button
+                onClick={() => setShowPassword(!showPassword)}
+                className="btn absolute right-2 top-12 btn-xs">{
+                  showPassword ? <FaEyeSlash /> : <FaEye />
+                }</button>
+              <label onClick={handleForgetPassword} className="label">
                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
               </label>
             </div>
