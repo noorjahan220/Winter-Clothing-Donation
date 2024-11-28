@@ -1,0 +1,84 @@
+[
+    {
+      "id": 1,
+      "title": "Warm Smiles Dhaka",
+      "image": "https://example.com/images/dhaka-campaign.jpg",
+      "description": "Providing blankets and warm clothing to underprivileged communities in Dhaka.",
+      "status": "Ongoing",
+      "contactInfo": "dhaka-smiles@example.com",
+      "division": "Dhaka"
+    },
+    {
+      "id": 2,
+      "title": "Chattogram Winter Relief",
+      "image": "https://example.com/images/chattogram-campaign.jpg",
+      "description": "Help us distribute jackets and sweaters to children in rural Chattogram.",
+      "status": "Ongoing",
+      "contactInfo": "chattogram-relief@example.com",
+      "division": "Chattogram"
+    },
+    {
+      "id": 3,
+      "title": "Sylhet Warm Hearts Campaign",
+      "image": "https://example.com/images/sylhet-campaign.jpg",
+      "description": "Collecting and distributing warm clothes to tea workers' families in Sylhet.",
+      "status": "Completed",
+      "contactInfo": "sylhet-hearts@example.com",
+      "division": "Sylhet"
+    },
+    {
+      "id": 4,
+      "title": "Rajshahi Blanket Drive",
+      "image": "https://example.com/images/rajshahi-campaign.jpg",
+      "description": "Donate blankets to help farmers and their families in Rajshahi brave the winter.",
+      "status": "Ongoing",
+      "contactInfo": "rajshahi-blankets@example.com",
+      "division": "Rajshahi"
+    },
+    {
+      "id": 5,
+      "title": "Khulna Cozy Winter Initiative",
+      "image": "https://example.com/images/khulna-campaign.jpg",
+      "description": "Ensuring warm clothes reach the most vulnerable in Khulna’s coastal areas.",
+      "status": "Ongoing",
+      "contactInfo": "khulna-cozy@example.com",
+      "division": "Khulna"
+    },
+    {
+      "id": 6,
+      "title": "Barishal Warm Shelter Project",
+      "image": "https://example.com/images/barishal-campaign.jpg",
+      "description": "Join us in supporting the elderly in Barishal with winter essentials.",
+      "status": "Upcoming",
+      "contactInfo": "barishal-warm@example.com",
+      "division": "Barishal"
+    },
+    {
+      "id": 7,
+      "title": "Mymensingh Winter Support",
+      "image": "https://example.com/images/mymensingh-campaign.jpg",
+      "description": "Empowering local volunteers to bring warmth to families in Mymensingh.",
+      "status": "Ongoing",
+      "contactInfo": "mymensingh-support@example.com",
+      "division": "Mymensingh"
+    },
+    {
+      "id": 8,
+      "title": "Rangpur Cold Relief Effort",
+      "image": "https://example.com/images/rangpur-campaign.jpg",
+      "description": "Distributing woolen scarves and mittens to children in Rangpur's villages.",
+      "status": "Completed",
+      "contactInfo": "rangpur-relief@example.com",
+      "division": "Rangpur"
+    },
+    {
+      "id": 9,
+      "title": "Comilla Winter Drive",
+      "image": "https://example.com/images/comilla-campaign.jpg",
+      "description": "Mobilizing resources to provide sweaters and socks to families in Comilla.",
+      "status": "Ongoing",
+      "contactInfo": "comilla-drive@example.com",
+      "division": "Chattogram"
+    }
+  ]
+  
