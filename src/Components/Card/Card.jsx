@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 const Card = ({ card }) => {
@@ -5,7 +6,7 @@ const Card = ({ card }) => {
     return (
         <div>
             <h2>{title}</h2>
-            <button className="btn">Donate Now</button>
+            <Link to='/details' className="btn">Donate Now</Link>
         </div>
     );
 };

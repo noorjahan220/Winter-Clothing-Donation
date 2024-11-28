@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import toast from "react-hot-toast";
+
 
 
 
@@ -9,12 +11,12 @@ const Navbar = () => {
 
 
   const { user, signOutUser } = useContext(AuthContext)
-  
+
 
   const handleSignOut = () => {
     signOutUser()
       .then(() => {
-        console.log('user sign out successfully')
+        toast.success('Successfully signout!');
       })
       .catch(error => console.log('ERROR', error.message))
   }
@@ -23,7 +25,8 @@ const Navbar = () => {
     <li><NavLink to="/">Home</NavLink></li>
     <li><NavLink to="DonationCamp">Donation Campaigns</NavLink></li>
     <li><NavLink to="HowTo">How to Help</NavLink></li>
-    
+    <li><NavLink to="login">Login</NavLink></li>
+
     {
       user && <>
         <li><NavLink to="Dashboard">Dashboard</NavLink></li>
@@ -68,7 +71,8 @@ const Navbar = () => {
         {
           user ?
             <>
-              <span>{user.email}</span>
+
+              {user.photoURL && <img src={user.photoURL} alt="User Photo" className="w-8 h-8 rounded-full mr-2" />}
               <a onClick={handleSignOut} className="btn">Sign Out</a>
             </>
             :
