@@ -3,7 +3,7 @@ import 'daisyui/dist/full.css';
 
 const FAQ = () => {
   return (
-    <div className="p-16 mt-8 bg-base-200 rounded-lg mb-8 shadow-lg">
+    <div className="p-16 mt-8 bg-base-200 rounded-lg mb-10 shadow-lg">
 
 
       <div className="flex flex-col md:flex-row items-start  text-center md:space-x-10 space-y-6 md:space-y-0">
@@ -32,7 +32,7 @@ const FAQ = () => {
 
 
           <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-lg shadow-md">
-            <div className="collapse-title text-xl font-medium text-emerald-700 text-[18px]">
+            <div className="collapse-title  font-medium text-emerald-700 text-[18px]">
               Is my donation tax-deductible?
             </div>
             <div className="collapse-content text-gray-700 text-[16px]">
@@ -45,7 +45,7 @@ const FAQ = () => {
 
 
           <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-lg shadow-md">
-            <div className="collapse-title text-xl font-medium text-emerald-700 text-[18px]">
+            <div className="collapse-title  font-medium text-emerald-700 text-[18px]">
               Where does my donation go?
             </div>
             <div className="collapse-content text-gray-700 text-[16px]">
@@ -58,7 +58,7 @@ const FAQ = () => {
 
 
           <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-lg shadow-md">
-            <div className="collapse-title text-xl font-medium text-emerald-700 text-[18px]">
+            <div className="collapse-title font-medium text-emerald-700 text-[18px]">
               Can I volunteer with your charity?
             </div>
             <div className="collapse-content text-gray-700 text-[16px]">
@@ -71,7 +71,7 @@ const FAQ = () => {
 
 
           <div tabIndex={0} className="collapse collapse-arrow border border-base-300 bg-base-100 rounded-lg shadow-md">
-            <div className="collapse-title text-xl font-medium text-emerald-700 text-[18px]">
+            <div className="collapse-title  font-medium text-emerald-700 text-[18px]">
               How can I stay updated on your charity's work?
             </div>
             <div className="collapse-content text-gray-700 text-[16px]">

@@ -1,11 +1,13 @@
 import { useContext, useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import toast from "react-hot-toast";
 
 const Navbar = () => {
   const { user, signOutUser } = useContext(AuthContext);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,6 +41,7 @@ const Navbar = () => {
           className={({ isActive }) =>
             isActive ? "text-emerald-700 font-semibold" : "hover:text-emerald-700"
           }
+
         >
           Home
         </NavLink>
@@ -49,6 +52,7 @@ const Navbar = () => {
           className={({ isActive }) =>
             isActive ? "text-emerald-700 font-semibold" : "hover:text-emerald-700"
           }
+
         >
           Donation Campaigns
         </NavLink>
@@ -59,6 +63,7 @@ const Navbar = () => {
           className={({ isActive }) =>
             isActive ? "text-emerald-700 font-semibold" : "hover:text-emerald-700"
           }
+
         >
           How to Help
         </NavLink>
@@ -69,27 +74,53 @@ const Navbar = () => {
             to="Dashboard"
             className={({ isActive }) =>
               isActive ? "text-emerald-700 font-semibold" : "hover:text-emerald-700"
-            }
-          >
+            }>
             Dashboard
           </NavLink>
         </li>
       )}
+      <li>
+        {user ? (
+          <>
+            <button
+              onClick={handleSignOut}
+              className=" rounded-[36px] px-2 py-4 flex text-nowrap bg-emerald-700 hover:bg-emerald-800 text-white"
+            >
+              Sign Out
+              <div>
+                {user.photoURL && (
+                  <img
+                    src={user.photoURL}
+                    alt="User"
+                    className="w-7 h-7 rounded-full mr-2 border-2 border-emerald-700"
+                  />
+                )}
+              </div>
+            </button>
+          </>
+        ) : (
+          <Link to="/login" className="text-emerald-700 hover:underline lg:pr-32 ">
+            Login
+          </Link>
+        )}
+      </li>
     </>
   );
 
   return (
     <div
-      className={`navbar transition-all duration-300 fixed  w-11/12 mx-auto z-50 ${isScrolled ? "bg-white text-emerald-700" : "bg-transparent text-white"
-        }  shadow-inner `}
+      className={`navbar transition-all bg-white duration-300 top-0 left-0 right-0 z-50 mx-auto ${location.pathname === "/" ? (isScrolled ? "bg-white text-emerald-700 fixed max-w-full" : "shadow-inner bg-transparent text-white fixed max-w-screen-full") : "text-emerald-700 bg-[#f0f8ff] max-w-screen-md"}`}
     >
 
-      <div className="navbar-start">
-        <div className="dropdown">
+
+      <div className="navbar-start items-center">
+
+        <div className="dropdown hidden">
           <div
             tabIndex={0}
             role="button"
-            className="btn btn-ghost lg:hidden hover:text-emerald-700"
+            className="ml-4 lg:hidden text-emerald-700"
+
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -106,42 +137,32 @@ const Navbar = () => {
               />
             </svg>
           </div>
+
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow-lg"
+            className={`menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow-lg `}
           >
             {links}
           </ul>
         </div>
-        <a className="text-[26px] font-extrabold text-emerald-600">Winter Clothing Donation</a>
+
+
+
       </div>
+
+
+      <a className="ml-2 lg:mr-48 text-nowrap text-[20px] lg:text-[26px] font-extrabold  text-emerald-600">Winter Clothing <br />Donation</a>
 
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
 
-      <div className="navbar-end">
-        {user ? (
-          <>
-            {user.photoURL && (
-              <img
-                src={user.photoURL}
-                alt="User"
-                className="w-8 h-8 rounded-full mr-2 border-2 border-emerald-700"
-              />
-            )}
-            <button
-              onClick={handleSignOut}
-              className="btn bg-emerald-700 hover:bg-emerald-800 text-white"
-            >
-              Sign Out
-            </button>
-          </>
-        ) : (
-          <Link to="/login" className="text-emerald-700 hover:underline">
-            Login
-          </Link>
-        )}
+      <div className="navbar-end mr-10">
+
+
+
+
+
       </div>
     </div>
   );

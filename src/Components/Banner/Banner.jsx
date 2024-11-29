@@ -59,7 +59,7 @@ const Banner = () => {
                             alt="Banner Image 1"
                         />
                         <div className="absolute inset-0 bg-black opacity-50"></div>
-                        <div className="absolute top-1/2 left-4 transform -translate-y-1/2 text-left text-white">
+                        <div className="absolute lg:top-1/2 top-36 left-4 transform -translate-y-1/2 text-left text-white">
                             <h2 data-aos="fade-right" className="text-xl md:text-2xl font-bold">
                                 Make a Difference Today
                             </h2>
@@ -86,7 +86,7 @@ const Banner = () => {
                             alt="Banner Image 2"
                         />
                         <div className="absolute inset-0 bg-black opacity-50"></div>
-                        <div className="absolute top-1/2 left-4 transform -translate-y-1/2 text-left text-white">
+                        <div className="absolute lg:top-1/2 top-36 left-4 transform -translate-y-1/2 text-left text-white">
                             <h2 data-aos="fade-right" className="text-xl md:text-2xl font-bold">
                                 Spread Warmth, Share Hope
                             </h2>
@@ -96,7 +96,7 @@ const Banner = () => {
                             <button
                                 data-aos="fade-right"
                                 data-aos-delay="600"
-                                className="mt-6 px-4 py-2 bg-green-700 hover:bg-green-800 text-white rounded-[36px] text-[14px] font-semibold"
+                                className="mt-6 px-4 py-2  bg-emerald-700 hover:bg-emerald-800 text-white rounded-[36px] text-[14px] font-semibold"
                             >
                                 Donate Now
                             </button>
@@ -113,7 +113,7 @@ const Banner = () => {
                             alt="Banner Image 3"
                         />
                         <div className="absolute inset-0 bg-black opacity-50"></div>
-                        <div className="absolute top-1/2 left-4 transform -translate-y-1/2 text-left text-white">
+                        <div className="absolute lg:top-1/2 top-36 left-4 transform -translate-y-1/2 text-left text-white">
                             <h2 data-aos="fade-right" className="text-xl md:text-2xl font-bold">
                                 Help Spread Love and Warmth
                             </h2>
@@ -140,7 +140,7 @@ const Banner = () => {
                             alt="Banner Image 4"
                         />
                         <div className="absolute inset-0 bg-black opacity-50"></div>
-                        <div className="absolute top-1/2 left-4 transform -translate-y-1/2 text-left text-white">
+                        <div className="absolute lg:top-1/2 top-36 left-4 transform -translate-y-1/2 text-left text-white">
                             <h2 data-aos="fade-right" className="text-xl md:text-2xl font-bold">
                                 A Warm Coat Can Change a Life
                             </h2>

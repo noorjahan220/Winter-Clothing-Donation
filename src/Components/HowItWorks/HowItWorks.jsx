@@ -5,17 +5,17 @@ import "aos/dist/aos.css";
 const HowItWorks = () => {
   useEffect(() => {
     AOS.init({
-      offset: 200, // Trigger the animation a little earlier
-      duration: 1000, // Duration of the animation
-      easing: 'ease-in-out', // Smooth easing effect
-      once: true, // Animation will only happen once
+      offset: 200,
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
     });
   }, []);
 
   return (
     <section className="py-16 px-6 bg-emerald-50">
       <div className="container mx-auto">
-        {/* Section Header */}
+
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-emerald-700">How It Works</h1>
           <p className="text-lg text-gray-600 mt-4">
@@ -23,9 +23,9 @@ const HowItWorks = () => {
           </p>
         </header>
 
-        {/* Steps Section */}
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Step 1: Donate */}
+
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -37,7 +37,7 @@ const HowItWorks = () => {
             </p>
           </div>
 
-          {/* Step 2: Sort & Organize */}
+
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -49,7 +49,7 @@ const HowItWorks = () => {
             </p>
           </div>
 
-          {/* Step 3: Deliver */}
+
           <div
             data-aos="fade-up"
             data-aos-duration="1000"
