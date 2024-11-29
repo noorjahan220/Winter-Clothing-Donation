@@ -6,7 +6,7 @@ import { Toaster } from 'react-hot-toast';
 
 const MainLayout = () => {
     return (
-        <>
+        <div className='w-11/12 mx-auto'>
         <Toaster/>
             <header>
                 <Navbar/>
@@ -19,7 +19,7 @@ const MainLayout = () => {
             </footer>
 
 
-        </>
+        </div>
     );
 };
 

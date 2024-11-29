@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+   
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  img{
+    width: 95%;
+  }
+  .background-filter {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
+  }
+  
+  [class^="number-slide"],
+  [class*=" number-slide"] {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: #fff;
+    font-weight: 500;
+    height: 400px;
+    max-height: 100vh;
+  }
+  .keen-slider {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden; 
+  }
+  
+  .keen-slider__slide img {
+    object-fit: cover;
+    border-bottom-left-radius: 20px; 
+    border-bottom-right-radius: 20px; 
+  }
+  
+  
+ 
+  
