@@ -2,83 +2,103 @@
     {
       "id": 1,
       "title": "Warm Smiles Dhaka",
-      "image": "https://example.com/images/dhaka-campaign.jpg",
+      "image": "https://i.ibb.co.com/jzJQQWT/Copy-of-CSC-Thank-You-Website-Post-1-1-300x155.webp",
       "description": "Providing blankets and warm clothing to underprivileged communities in Dhaka.",
       "status": "Ongoing",
       "contactInfo": "dhaka-smiles@example.com",
-      "division": "Dhaka"
+      "division": "Dhaka",
+      "goal": 5000,
+      "raised": 3200
+      
     },
     {
       "id": 2,
       "title": "Chattogram Winter Relief",
-      "image": "https://example.com/images/chattogram-campaign.jpg",
+      "image": "https://i.ibb.co.com/BsZSLwj/3a37fb9f5520f3d53928132bd1353b47.jpg",
       "description": "Help us distribute jackets and sweaters to children in rural Chattogram.",
       "status": "Ongoing",
       "contactInfo": "chattogram-relief@example.com",
-      "division": "Chattogram"
+      "division": "Chattogram",
+      "goal": 10000,
+    "raised": 4500
     },
     {
       "id": 3,
       "title": "Sylhet Warm Hearts Campaign",
-      "image": "https://example.com/images/sylhet-campaign.jpg",
+      "image": "https://i.ibb.co.com/2FCn3gL/images.jpg",
       "description": "Collecting and distributing warm clothes to tea workers' families in Sylhet.",
       "status": "Completed",
       "contactInfo": "sylhet-hearts@example.com",
-      "division": "Sylhet"
+      "division": "Sylhet",
+      "goal": 8000,
+      "raised": 5000
     },
     {
       "id": 4,
       "title": "Rajshahi Blanket Drive",
-      "image": "https://example.com/images/rajshahi-campaign.jpg",
+      "image": "https://i.ibb.co.com/fFffyjL/5ddd09c236294a4669728c8f-1574767042852.jpg",
       "description": "Donate blankets to help farmers and their families in Rajshahi brave the winter.",
       "status": "Ongoing",
       "contactInfo": "rajshahi-blankets@example.com",
-      "division": "Rajshahi"
+      "division": "Rajshahi",
+      "goal": 15000,
+      "raised": 9000
     },
     {
       "id": 5,
       "title": "Khulna Cozy Winter Initiative",
-      "image": "https://example.com/images/khulna-campaign.jpg",
+      "image": "https://i.ibb.co.com/yfK4XRR/images-3.jpg",
       "description": "Ensuring warm clothes reach the most vulnerable in Khulna’s coastal areas.",
       "status": "Ongoing",
       "contactInfo": "khulna-cozy@example.com",
-      "division": "Khulna"
+      "division": "Khulna",
+      "goal": 20000,
+      "raised": 12000
     },
     {
       "id": 6,
       "title": "Barishal Warm Shelter Project",
-      "image": "https://example.com/images/barishal-campaign.jpg",
+      "image": "https://i.ibb.co.com/5FB1fJk/images-1.jpg",
       "description": "Join us in supporting the elderly in Barishal with winter essentials.",
       "status": "Upcoming",
       "contactInfo": "barishal-warm@example.com",
-      "division": "Barishal"
+      "division": "Barishal",
+      "goal": 7000,
+    "raised": 4200
     },
     {
       "id": 7,
       "title": "Mymensingh Winter Support",
-      "image": "https://example.com/images/mymensingh-campaign.jpg",
+      "image": "https://i.ibb.co.com/MPksXj4/larm-rmah-AEa-TUnvneik-unsplash.jpg",
       "description": "Empowering local volunteers to bring warmth to families in Mymensingh.",
       "status": "Ongoing",
       "contactInfo": "mymensingh-support@example.com",
-      "division": "Mymensingh"
+      "division": "Mymensingh",
+      "goal": 6000,
+    "raised": 3200
     },
     {
       "id": 8,
       "title": "Rangpur Cold Relief Effort",
-      "image": "https://example.com/images/rangpur-campaign.jpg",
+      "image": "https://i.ibb.co.com/9wrw4qL/images-2.jpg",
       "description": "Distributing woolen scarves and mittens to children in Rangpur's villages.",
       "status": "Completed",
       "contactInfo": "rangpur-relief@example.com",
-      "division": "Rangpur"
+      "division": "Rangpur",
+      "goal": 8000,
+    "raised": 6200
     },
     {
       "id": 9,
       "title": "Comilla Winter Drive",
-      "image": "https://example.com/images/comilla-campaign.jpg",
+      "image": "https://i.ibb.co.com/w0ZFnYn/joel-muniz-qvzj-G2p-F4b-E-unsplash.jpg",
       "description": "Mobilizing resources to provide sweaters and socks to families in Comilla.",
       "status": "Ongoing",
       "contactInfo": "comilla-drive@example.com",
-      "division": "Chattogram"
+      "division": "Chattogram",
+      "goal": 5000,
+      
+    "raised": 2200
     }
   ]
   

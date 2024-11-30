@@ -4,8 +4,10 @@ import "./Banner.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const Banner = () => {
+    const navigate = useNavigate();
     const [sliderRef] = useKeenSlider(
         {
             loop: true,
@@ -48,6 +50,10 @@ const Banner = () => {
         AOS.init({ duration: 900, once: true });
     }, []);
 
+    const handleNavigate = () => {
+        navigate("/dashboard");
+    };
+
     return (
         <div className="relative">
             <div ref={sliderRef} className="keen-slider">
@@ -67,6 +73,7 @@ const Banner = () => {
                                 Donate Winter Clothes and Help Those in Need
                             </p>
                             <button
+                                onClick={handleNavigate}
                                 data-aos="fade-right"
                                 data-aos-delay="600"
                                 className="mt-6 px-4 py-2 bg-green-700 hover:bg-green-800 text-white rounded-[36px] text-[14px] font-semibold"
@@ -94,6 +101,7 @@ const Banner = () => {
                                 Your Donation Can Change a Life
                             </p>
                             <button
+                                onClick={handleNavigate}
                                 data-aos="fade-right"
                                 data-aos-delay="600"
                                 className="mt-6 px-4 py-2  bg-emerald-700 hover:bg-emerald-800 text-white rounded-[36px] text-[14px] font-semibold"
@@ -121,6 +129,7 @@ const Banner = () => {
                                 Your Generosity Can Save Lives
                             </p>
                             <button
+                                onClick={handleNavigate}
                                 data-aos="fade-right"
                                 data-aos-delay="600"
                                 className="mt-6 px-4 py-2 bg-green-700 hover:bg-green-800 text-white rounded-[36px] text-[14px] font-semibold"
@@ -148,6 +157,7 @@ const Banner = () => {
                                 Donate Winter Clothes to Those in Need
                             </p>
                             <button
+                                onClick={handleNavigate}
                                 data-aos="fade-right"
                                 data-aos-delay="600"
                                 className="mt-6 px-4 py-2 bg-green-700 hover:bg-green-800 text-white rounded-[36px] text-[14px] font-semibold"

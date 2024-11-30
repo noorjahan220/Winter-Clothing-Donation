@@ -84,22 +84,22 @@ const Navbar = () => {
           <>
             <button
               onClick={handleSignOut}
-              className=" rounded-[36px] px-2 py-4 flex text-nowrap bg-emerald-700 hover:bg-emerald-800 text-white"
+              className="text-xs font-semibold rounded-[36px] px-2 py-4 flex text-nowrap bg-emerald-700 hover:bg-emerald-800 text-white"
             >
               Sign Out
-              <div>
+             
                 {user.photoURL && (
                   <img
                     src={user.photoURL}
                     alt="User"
-                    className="w-7 h-7 rounded-full mr-2 border-2 border-emerald-700"
+                    className="w-5 h-5 rounded-full mr-1 border-2 border-emerald-700"
                   />
                 )}
-              </div>
+              
             </button>
           </>
         ) : (
-          <Link to="/login" className="text-emerald-700 hover:underline lg:pr-32 ">
+          <Link to="/login" className="text-emerald-700 hover:underline lg:pr-28 ">
             Login
           </Link>
         )}
@@ -109,7 +109,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`navbar transition-all bg-white duration-300 top-0 left-0 right-0 z-50 mx-auto ${location.pathname === "/" ? (isScrolled ? "bg-white text-emerald-700 fixed max-w-full" : "shadow-inner bg-transparent text-white fixed max-w-screen-full") : "text-emerald-700 bg-[#f0f8ff] max-w-screen-md"}`}
+      className={`navbar transition-all bg-white duration-300 top-0 left-0 right-0 z-50 mx-auto ${location.pathname === "/" ? (isScrolled ? "bg-white text-emerald-700 fixed max-w-full" : "shadow-inner bg-transparent text-white fixed max-w-screen-full") : "text-emerald-700 bg-[#f0f8ff] max-w-screen-full"}`}
     >
 
 
@@ -140,7 +140,7 @@ const Navbar = () => {
 
           <ul
             tabIndex={0}
-            className={`menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow-lg `}
+            className={`menu menu-sm dropdown-content bg-white rounded-box z-[1] mt-3 w-52 p-2 shadow-lg text-black`}
           >
             {links}
           </ul>
@@ -151,7 +151,7 @@ const Navbar = () => {
       </div>
 
 
-      <a className="ml-2 lg:mr-48 text-nowrap text-[20px] lg:text-[26px] font-extrabold  text-emerald-600">Winter Clothing <br />Donation</a>
+      <a className="ml-2 lg:mr-28 text-nowrap text-[20px] lg:text-[26px] font-extrabold  text-emerald-600">Winter Clothing <br />Donation</a>
 
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
