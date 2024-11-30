@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import toast from "react-hot-toast";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import { sendPasswordResetEmail } from "firebase/auth";
 import logo from '../../assets/Humaaans - Buy Online.png'
 
 const Login = () => {
@@ -38,20 +37,12 @@ const Login = () => {
       });
   };
 
-  const handleForgetPassword = () => {
-    const email = emailRef.current.value;
-    if (email) {
-      sendPasswordResetEmail(email)
-        .then(() => toast.success("Password reset email sent!"))
-        .catch((error) => toast.error(error.message));
-    } else {
-      toast.error("Please enter your email to reset the password!");
-    }
+  const handleForgetPass = () => {
+    navigate("/forget", { state: { email: emailRef.current.value } });
   };
 
   return (
     <div className="flex lg:flex-row flex-col lg:p-10 mt-4 mb-4 ">
-
       <div className="lg:w-1/2 bg-teal-200 flex flex-col justify-center items-center p-10 lg:rounded-l-[16px]">
         <h1 className="text-3xl font-bold text-center mb-4 text-gray-800">
           "Giving is the greatest act of grace"
@@ -62,7 +53,6 @@ const Login = () => {
           className="w-4/4"
         />
       </div>
-
 
       <div>
         <div className="lg:w-full bg-white flex flex-col justify-center items-center p-10 lg:rounded-r-[16px]">
@@ -82,7 +72,6 @@ const Login = () => {
                 />
               </div>
 
-
               <div className="form-control relative">
                 <input
                   name="password"
@@ -99,21 +88,19 @@ const Login = () => {
                   {showPassword ? <FaEyeSlash /> : <FaEye />}
                 </button>
                 <p
-                  onClick={handleForgetPassword}
+                  onClick={handleForgetPass}
                   className="lg:text-right text-blue-500 text-sm mt-1 cursor-pointer "
                 >
                   Forgot password?
                 </p>
               </div>
 
-
               <div className="form-control">
                 <button type="submit" className="btn w-full"
-                style={{ backgroundColor: "#e63946", color: "#fff" }}>
+                  style={{ backgroundColor: "#e63946", color: "#fff" }}>
                   Sign In
                 </button>
               </div>
-
 
               <div className="form-control">
                 <button
@@ -126,10 +113,9 @@ const Login = () => {
               </div>
             </form>
 
-
             <p className="text-center mt-4">
               Don't have an account?{" "}
-              <Link to="/register" className=" underline"
+              <Link to="/register" className="underline"
                style={{ color: "#e63946" }}>
                 Create Account
               </Link>

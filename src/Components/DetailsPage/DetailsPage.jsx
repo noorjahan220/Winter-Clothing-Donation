@@ -19,7 +19,7 @@ const CampaignDetails = () => {
     }
 
     return (
-        <div className="container mx-auto p-20">
+        <div className="container mx-auto py-10 lg:p-20">
             {/* Campaign Details Card */}
             <div className="bg-white shadow-xl rounded-lg p-6 mb-8 border-t-4 border-emerald-600">
                 <h2 className="text-2xl font-extrabold text-center text-emerald-700">{campaign.title}</h2>

@@ -11,6 +11,7 @@ import Dashboard from './../Components/dashboard/Dashboard';
 import DetailsPage from "../Components/DetailsPage/DetailsPage";
 import ErrorPage from './../Components/ErrorPage/ErrorPage';
 import UpdateProfile from "../Components/UpdateProfile/UpdateProfile";
+import ForgotPassword from "../Components/ForgotPassword/ForgotPassword";
 
 
 const router = createBrowserRouter([
@@ -45,6 +46,12 @@ const router = createBrowserRouter([
                 element: <PrivateRoute><DetailsPage /></PrivateRoute>,
                 loader: () => fetch('/donationData.JSON'),
             },
+            {
+                path: "/forget",
+                element: <ForgotPassword/>
+                
+            },
+
             {
                 path: "*",
                 element: <ErrorPage />

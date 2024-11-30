@@ -34,7 +34,7 @@ const UpdateProfile = () => {
                 photoURL: photoURL,
             });
             toast.success("Profile updated successfully!");
-            navigate("/");
+            navigate("/dashboard");
         } catch (error) {
             console.error("Error updating profile:", error);
             toast.error("Failed to update profile.");
