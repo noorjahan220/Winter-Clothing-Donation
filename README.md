@@ -12,6 +12,13 @@ This site promotes community engagement and encourages local support with a divi
 
 ---
 
+## 📸 Project Screenshot  
+![Winter Clothing Donation Website](link-to-your-screenshot)  
+
+*(Replace `link-to-your-screenshot` with the actual image URL.)*  
+
+---
+
 ## ✨ Key Features  
 
 ### 🧥 Donation Campaigns  
@@ -43,11 +50,6 @@ This site promotes community engagement and encourages local support with a divi
 - Aesthetic design that aligns with the purpose of winter donations, focusing on **regional divisions**.  
 - Includes a **slider/banner** to showcase campaigns and community involvement.  
 
-### 📄 Informative Sections  
-- **About Section**: Explains the mission and how users can contribute.  
-- **How It Works Section**: Instructions for donation and details about collection points.  
-- Two additional custom sections for added engagement.  
-
 ### ⚠️ Error Handling  
 - Custom **404 page** with a button to redirect users to the home page for invalid routes.  
 
@@ -63,9 +65,15 @@ This site promotes community engagement and encourages local support with a divi
 
 ---
 
-## 📦 NPM Packages Used  
+## 📦 Technologies Used  
+- **React.js** (Frontend Framework)  
+- **Vite** (Lightning-fast development environment)  
+- **Firebase** (Authentication & Hosting)  
+- **Surge** (Static site hosting)  
+- **AOS** (Animations)  
+- **React Hot Toast** (Notification system)  
 
-Here are the main npm packages used in this project:  
+---
 
 ## 📦 NPM Packages Used  
 
@@ -79,47 +87,11 @@ Here are the main npm packages used in this project:
 | **`react-icons`**         | Offers a vast library of icons for UI elements.                      |  
 | **`react-spinners`**      | Adds loading spinners for asynchronous operations.                   |  
 | **`swiper`**              | Implements sliders to beautifully showcase campaigns.                |  
+
 ---
 
+## 🛠 How to Run Locally  
 
-
-
-## 🤔 Struggles Faced  
-
-Creating this project presented some challenges that were both rewarding and educational:
-
-### 1. **Responsive Design Adjustments**  
-   Ensuring the site displayed seamlessly across all devices was time-consuming. The most challenging parts were complex sections like the banner and campaign cards, which required careful adjustments for mobile, tablet, and desktop views.
-
-### 2. **Firebase Authentication**  
-   Implementing social login and handling private route redirection involved multiple attempts and debugging. Ensuring that users could only access specific routes when authenticated took a bit of trial and error.
-
-### 3. **Form Validation**  
-   Enforcing password validation rules was tricky, especially finding the right balance between usability and security. Ensuring that users followed strong password policies without making it frustrating was a challenge.
-
-### 4. **Animations**  
-   Integrating animations using **AOS** to enhance the user experience was rewarding, but it also required extra attention to performance optimization. Ensuring smooth animations without impacting load times was an interesting challenge.
-
-### 5. **Deployment Issues**  
-   Configuring the hosting platform for a single-page application (SPA) to handle routing without reload errors was difficult. Ensuring smooth deployment with platforms like **Netlify** or **Surge**, without causing issues for private routes, took extra effort.
-
-Despite these challenges, overcoming them significantly enhanced my skills and deepened my understanding of web development! 🚀
-
-
-
-
-
-
-
-
-
-
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/your-username/winter-clothing-donation.git
