@@ -88,8 +88,32 @@ This site promotes community engagement and encourages local support with a divi
 - 🌎 [Firebase Authentication Docs](https://firebase.google.com/docs/auth)  
 - 📌 [Vite Documentation](https://vitejs.dev/)  
 - 🚀 [Surge Hosting Guide](https://surge.sh/help/getting-started-with-surge) 
-## 🛠 How to Run Locally  
+## 📋 How to Run the Project Locally
 
+### 1️⃣ Clone the Repository  
+```bash
+git clone https://github.com/your-username/news-paper.git
+```
+
+### 2️⃣ Navigate to the Project Directory  
+```bash
+cd news-paper
+```
+
+### 3️⃣ Install Dependencies  
+```bash
+npm install
+```
+
+### 4️⃣ Start the Development Server  
+```bash
+npm run dev
+```
+
+### 5️⃣ Open in Browser  
+Visit `http://localhost:5173` to see the project running.
+
+---
 ### 1️⃣ Clone the Repository  
 bash
 git clone https://github.com/your-username/winter-clothing-donation.git
