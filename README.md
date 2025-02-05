@@ -113,7 +113,4 @@ npm run dev
 ### 5️⃣ Open in Browser  
 Visit `http://localhost:5173` to see the project running.
 
----
-### 1️⃣ Clone the Repository  
-bash
-git clone https://github.com/your-username/winter-clothing-donation.git
+
