@@ -83,7 +83,11 @@ This site promotes community engagement and encourages local support with a divi
 | **`swiper`**              | Implements sliders to beautifully showcase campaigns.                |  
 
 ---
-
+## 📚 Additional Resources  
+- 🔥 [React.js Documentation](https://reactjs.org/docs/getting-started.html)  
+- 🌎 [Firebase Authentication Docs](https://firebase.google.com/docs/auth)  
+- 📌 [Vite Documentation](https://vitejs.dev/)  
+- 🚀 [Surge Hosting Guide](https://surge.sh/help/getting-started-with-surge) 
 ## 🛠 How to Run Locally  
 
 ### 1️⃣ Clone the Repository  
