@@ -12,12 +12,6 @@ This site promotes community engagement and encourages local support with a divi
 
 ---
 
-## 📸 Project Screenshot  
-![Winter Clothing Donation Website](link-to-your-screenshot)  
-
-*(Replace `link-to-your-screenshot` with the actual image URL.)*  
-
----
 
 ## ✨ Key Features  
 
